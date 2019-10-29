@@ -1,4 +1,4 @@
-FROM alpine
+FROM keymetrics/pm2:10-alpine
 
 RUN apk --update add git openssh bash curl && \
     rm -rf /var/lib/apt/lists/* && \
